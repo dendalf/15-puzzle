@@ -3,17 +3,6 @@
     margin: 0;
 }
 
-html {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-
 .number {
     height: 100px;
     width: 100px;
@@ -31,11 +20,8 @@ html {
     height: 432px;
     width: 432px;
     border: 1px solid #000000;
-    position: absolute;
-    top: 0;
-    left: 0;
     background: #03a9f4;
-
+    margin: 100px auto;
 }
 
 .empty {
