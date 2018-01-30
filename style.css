@@ -16,12 +16,12 @@
     color: #616161;
 }
 
-.wrapper {
+.ul {
     height: 432px;
     width: 432px;
     border: 1px solid #000000;
     background: #03a9f4;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .empty {
@@ -33,6 +33,7 @@
     text-align: center;
     float: left;
     font-size: 50px;
+    background: #03a9f4;
 
 }
 
@@ -94,4 +95,13 @@
 
 .fifteen:before {
     content: '15';
+}
+.mix, .regulations{
+    color: #ffca28;
+    margin: 10px 5px 0;
+}
+#wrapper {
+    display: flex;
+    justify-content: center;
+
 }
