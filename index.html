@@ -7,38 +7,69 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link  rel = "stylesheet " href = "https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+
 </head>
 <body>
 <!--сделать управление мышкой-->
 <!--сделать окно 'ты выиграл!'-->
-<!--сделать 'приветствие и правила игры'-->
+<!--сделать перемешивание-->
+<!--сделать уровни-->
+<!--сделать менюшку справа-->
+
 
 <div id="wrapper">
-        <button type="button" class="btn btn-primary regulations animated slideInLeft" >Перемешать</button>
-        <button type="button" class="btn btn-info mix animated slideInRight">Узнать правила игры</button>
+        <button type="button" class="btn btn-primary regulations animated slideInLeft">Перемешать</button>
+        <button type="button" class="btn btn-info mix animated slideInRight btn-primary" data-toggle="modal" data-target="#exampleModal">Узнать правила игры</button>
 </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Правила игры</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Игра производится стрелочками (вверх, вниз, вправо, влево).
+                Нажмите кнопку "Перемешать" и соберите пазл обратно чтобы цифры шли подряд от 1 до 15.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ага, я всё понял</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
 <ul class="ul animated slideInUp">
-    <li class="one number"></li>
-    <li class="two number"></li>
-    <li class="three number"></li>
-    <li class="four number"></li>
-    <li class="five number"></li>
-    <li class="six number"></li>
-    <li class="seven number"></li>
-    <li class="eight number"></li>
-    <li class="nine number"></li>
-    <li class="ten number"></li>
-    <li class="eleven number"></li>
-    <li class="twelve number"></li>
-    <li class="thirteen number"></li>
-    <li class="fourteen number"></li>
-    <li class="fifteen number"></li>
+    <li class="number-1 number"></li>
+    <li class="number-2 number"></li>
+    <li class="number-3 number"></li>
+    <li class="number-4 number"></li>
+    <li class="number-5 number"></li>
+    <li class="number-6 number"></li>
+    <li class="number-7 number"></li>
+    <li class="number-8 number"></li>
+    <li class="number-9  number"></li>
+    <li class="number-10 number"></li>
+    <li class="number-11 number"></li>
+    <li class="number-12 number"></li>
+    <li class="number-13 number"></li>
+    <li class="number-14 number"></li>
+    <li class="number-15 number"></li>
     <li class="empty"></li>
-</ul>
 
+
+</ul>
+</div>
 
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://modeewine.com/wp-content/themes/modeewine/js/jquery.shuffle.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

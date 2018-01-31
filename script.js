@@ -21,33 +21,61 @@ $(document).ready(function () {
     $('.number').on('click', function () {
         $('sel').hasClass('empty');
         if ($(this).next().attr('class') === 'empty'){
-            console.log('555');
             moveEmptyLeft();
         }
         else if ($(this).next().next().next().next().attr('class') === 'empty'){
-            console.log(666);
             moveEmptyTop();
         }
         else if ($(this).prev().attr('class') === 'empty'){
-            console.log(777);
             moveEmptyRight();
         }
         else if ($(this).prev().prev().prev().prev().attr('class') === 'empty'){
-            console.log(888);
             moveEmptyBottom();
         }
     });
 });
-var arr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'empty'];
+var ii = 0;
 $('.regulations').click(function () {
-    arr.sort(function () { return Math.random(); });
-    console.log(arr);
-    $('li').removeAttr('class');
-    $('li').each(function (i, el) {
-        $(el).addClass('number').addClass(arr[i])
+    // while (ii < 40) {
+        $(document).ready(function(){
+            $('.ul li').shuffle();
+        });
+        // $('li').first(function () {
+        //     var cl = $('li').first().attr("class");
+        //     $(this).removeClass();
+        //     $(this).addClass('number').addClass(cl);
+        // });
+        // $('li').last(function () {
+        //     var cl = $('li').last().attr("class");
+        //     $(this).removeClass();
+        //     $(this).addClass('number').addClass(cl);
+        //     ii++
+        // });
 
-    })
+    // }
 });
+
+// var arr = ['number-1 number', 'number-2 number', 'number-3 number', 'number-4 number', 'number-5 number', 'number-6 number', 'number-7 number', 'number-8 number', 'number-9 number', 'number-10 number', 'number-11 number', 'number-12 number', 'number-13 number', 'number-14 number', 'number-15 number', 'empty'];
+// var classes = [];
+// $('li').each(function (index) {
+//     var abc = $(this).attr('class');
+//     classes.push(abc)
+// });
+// if (arr === classes) {
+//     console.log(555)
+// }
+//
+// $(document).click(function (e) {
+//         console.log(arr);
+//         console.log(classes);
+// });
+
+
+// $('li').each(function (index) {
+//     var abc = $(this).attr('class');
+//     classes.push(abc)
+// });
+
 
 
 function moveEmptyRight() {

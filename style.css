@@ -37,63 +37,63 @@
 
 }
 
-.one:before {
+.number-1:before {
     content: '1';
 }
 
-.two:before {
+.number-2:before {
     content: '2';
 }
 
-.three:before {
+.number-3:before {
     content: '3';
 }
 
-.four:before {
+.number-4:before {
     content: '4';
 }
 
-.five:before {
+.number-5:before {
     content: '5';
 }
 
-.six:before {
+.number-6:before {
     content: '6';
 }
 
-.seven:before {
+.number-7:before {
     content: '7';
 }
 
-.eight:before {
+.number-8:before {
     content: '8';
 }
 
-.nine:before {
+.number-9:before {
     content: '9';
 }
 
-.ten:before {
+.number-10:before {
     content: '10';
 }
 
-.eleven:before {
+.number-11:before {
     content: '11';
 }
 
-.twelve:before {
+.number-12:before {
     content: '12';
 }
 
-.thirteen:before {
+.number-13:before {
     content: '13';
 }
 
-.fourteen:before {
+.number-14:before {
     content: '14';
 }
 
-.fifteen:before {
+.number-15:before {
     content: '15';
 }
 .mix, .regulations{
