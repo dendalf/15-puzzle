@@ -16,8 +16,11 @@ $(document).ready(function () {
                 moveEmptyBottom();
                 break;
         }
+        if(check()) {chekcFunction()}
     });
-
+    function chekcFunction() {
+        $('#myModal').modal()
+    };
     $('.number').on('click', function () {
         $('sel').hasClass('empty');
         if ($(this).next().attr('class') === 'empty'){
@@ -55,26 +58,18 @@ $('.regulations').click(function () {
     // }
 });
 
-// var arr = ['number-1 number', 'number-2 number', 'number-3 number', 'number-4 number', 'number-5 number', 'number-6 number', 'number-7 number', 'number-8 number', 'number-9 number', 'number-10 number', 'number-11 number', 'number-12 number', 'number-13 number', 'number-14 number', 'number-15 number', 'empty'];
-// var classes = [];
-// $('li').each(function (index) {
-//     var abc = $(this).attr('class');
-//     classes.push(abc)
-// });
-// if (arr === classes) {
-//     console.log(555)
-// }
-//
-// $(document).click(function (e) {
-//         console.log(arr);
-//         console.log(classes);
-// });
+var arr = ['number-1 number', 'number-2 number', 'number-3 number', 'number-4 number', 'number-5 number', 'number-6 number', 'number-7 number', 'number-8 number', 'number-9 number', 'number-10 number', 'number-11 number', 'number-12 number', 'number-13 number', 'number-14 number', 'number-15 number', 'empty'];
 
+function check() {
+var win = true;
+    $('li').each(function (index) {
+        var abc = $(this).attr('class');
+        if(abc !== arr[index]) win = false;
+    });
 
-// $('li').each(function (index) {
-//     var abc = $(this).attr('class');
-//     classes.push(abc)
-// });
+    return win;
+}
+
 
 
 
