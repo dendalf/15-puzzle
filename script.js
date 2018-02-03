@@ -16,46 +16,50 @@ $(document).ready(function () {
                 moveEmptyBottom();
                 break;
         }
-        if(check()) {chekcFunction()}
+        if(check()) {checkFunction()}
     });
-    function chekcFunction() {
+    function checkFunction() {
         $('#myModal').modal()
-    };
-    $('.number').on('click', function () {
-        $('sel').hasClass('empty');
+    }
+    $('.number, .empty').on('click', function () {
         if ($(this).next().attr('class') === 'empty'){
             moveEmptyLeft();
         }
         else if ($(this).next().next().next().next().attr('class') === 'empty'){
-            moveEmptyTop();
+            moveEmptyBottom();
         }
         else if ($(this).prev().attr('class') === 'empty'){
             moveEmptyRight();
         }
         else if ($(this).prev().prev().prev().prev().attr('class') === 'empty'){
-            moveEmptyBottom();
+            moveEmptyTop();
         }
     });
+
 });
+
 var ii = 0;
 $('.regulations').click(function () {
-    // while (ii < 40) {
+
         $(document).ready(function(){
             $('.ul li').shuffle();
         });
-        // $('li').first(function () {
-        //     var cl = $('li').first().attr("class");
-        //     $(this).removeClass();
-        //     $(this).addClass('number').addClass(cl);
-        // });
-        // $('li').last(function () {
-        //     var cl = $('li').last().attr("class");
-        //     $(this).removeClass();
-        //     $(this).addClass('number').addClass(cl);
-        //     ii++
-        // });
+    // while (ii < 40) {
+    // $('li').each(function eachElement() { var liClasses = $('li').attr('class'); });
+    //
+    //     var arr2 = [];
+    //     arr2.push(eachElement);
+    //     var getRandom = function (min, max) {
+    //         return Math.floor(Math.random()) * (max - min) + min
+    //     };
+    //     var RandElement = arr2[getRandom(1, 17)*(arr.length)];
+    //     var RandElement2 = arr2[getRandom(1, 17)*(arr.length)];
+    //     var temp1 = arr2[RandElement];
+    //     arr2[RandElement] = arr2[RandElement2];
+    //     arr2[RandElement2] = temp1;
 
     // }
+
 });
 
 var arr = ['number-1 number', 'number-2 number', 'number-3 number', 'number-4 number', 'number-5 number', 'number-6 number', 'number-7 number', 'number-8 number', 'number-9 number', 'number-10 number', 'number-11 number', 'number-12 number', 'number-13 number', 'number-14 number', 'number-15 number', 'empty'];
