@@ -34,6 +34,10 @@ $(document).ready(function () {
         else if ($(this).prev().prev().prev().prev().attr('class') === 'empty'){
             moveEmptyTop();
         }
+
+    });
+    $('.number-12, .number-15, .empty').on('click', function () {
+        if(check()) {checkFunction()}
     });
 
 });
@@ -72,7 +76,9 @@ var win = true;
     });
 
     return win;
+
 }
+
 
 
 
